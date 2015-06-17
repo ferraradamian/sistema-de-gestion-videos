@@ -37,13 +37,18 @@
             this.buttonCategorias = new System.Windows.Forms.Button();
             this.buttonProductos = new System.Windows.Forms.Button();
             this.buttonPedidos = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aRCHIVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rESTAURACIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanelGeneral.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +58,7 @@
             this.tableLayoutPanelGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelGeneral.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanelGeneral.Controls.Add(this.menuStrip1, 0, 0);
+            this.tableLayoutPanelGeneral.Controls.Add(this.panel2, 0, 2);
             this.tableLayoutPanelGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelGeneral.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelGeneral.Name = "tableLayoutPanelGeneral";
@@ -60,7 +66,7 @@
             this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelGeneral.Size = new System.Drawing.Size(873, 405);
+            this.tableLayoutPanelGeneral.Size = new System.Drawing.Size(873, 456);
             this.tableLayoutPanelGeneral.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -73,7 +79,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.Controls.Add(this.buttonReportes, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonEmpleados, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonTransporte, 4, 0);
@@ -83,7 +89,7 @@
             this.tableLayoutPanel2.Controls.Add(this.buttonPedidos, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 7, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 27);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 30);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -210,53 +216,112 @@
             this.buttonPedidos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonPedidos.UseVisualStyleBackColor = false;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aRCHIVOToolStripMenuItem,
-            this.aYUDAToolStripMenuItem,
-            this.rESTAURACIÓNToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(873, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // aRCHIVOToolStripMenuItem
-            // 
-            this.aRCHIVOToolStripMenuItem.Name = "aRCHIVOToolStripMenuItem";
-            this.aRCHIVOToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.aRCHIVOToolStripMenuItem.Text = "ARCHIVO";
-            // 
-            // aYUDAToolStripMenuItem
-            // 
-            this.aYUDAToolStripMenuItem.Name = "aYUDAToolStripMenuItem";
-            this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.aYUDAToolStripMenuItem.Text = "AYUDA";
-            // 
-            // rESTAURACIÓNToolStripMenuItem
-            // 
-            this.rESTAURACIÓNToolStripMenuItem.Name = "rESTAURACIÓNToolStripMenuItem";
-            this.rESTAURACIÓNToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
-            this.rESTAURACIÓNToolStripMenuItem.Text = "RESTAURACIÓN";
-            // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.fondo_logo;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(633, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(231, 105);
             this.panel1.TabIndex = 7;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aRCHIVOToolStripMenuItem,
+            this.aYUDAToolStripMenuItem,
+            this.rESTAURACIÓNToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(7, 0);
+            this.menuStrip1.Margin = new System.Windows.Forms.Padding(7, 0, 5, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(861, 27);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // aRCHIVOToolStripMenuItem
+            // 
+            this.aRCHIVOToolStripMenuItem.BackColor = System.Drawing.Color.Orange;
+            this.aRCHIVOToolStripMenuItem.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aRCHIVOToolStripMenuItem.Name = "aRCHIVOToolStripMenuItem";
+            this.aRCHIVOToolStripMenuItem.Size = new System.Drawing.Size(84, 23);
+            this.aRCHIVOToolStripMenuItem.Text = "ARCHIVO";
+            // 
+            // aYUDAToolStripMenuItem
+            // 
+            this.aYUDAToolStripMenuItem.BackColor = System.Drawing.Color.Orange;
+            this.aYUDAToolStripMenuItem.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aYUDAToolStripMenuItem.Name = "aYUDAToolStripMenuItem";
+            this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(71, 23);
+            this.aYUDAToolStripMenuItem.Text = "AYUDA";
+            // 
+            // rESTAURACIÓNToolStripMenuItem
+            // 
+            this.rESTAURACIÓNToolStripMenuItem.BackColor = System.Drawing.Color.Orange;
+            this.rESTAURACIÓNToolStripMenuItem.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rESTAURACIÓNToolStripMenuItem.Name = "rESTAURACIÓNToolStripMenuItem";
+            this.rESTAURACIÓNToolStripMenuItem.Size = new System.Drawing.Size(131, 23);
+            this.rESTAURACIÓNToolStripMenuItem.Text = "RESTAURACIÓN";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(7, 147);
+            this.panel2.Margin = new System.Windows.Forms.Padding(7, 3, 5, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(861, 306);
+            this.panel2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(32, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(344, 46);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DISTRIBUIDORA";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Location = new System.Drawing.Point(37, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(343, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "DE ARTÍCULOS PARA LIBRERÍAS";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Orange;
+            this.label3.Location = new System.Drawing.Point(35, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(362, 39);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "TRANTANELLI S.R.L";
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 405);
+            this.ClientSize = new System.Drawing.Size(873, 456);
             this.Controls.Add(this.tableLayoutPanelGeneral);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(889, 444);
+            this.MinimumSize = new System.Drawing.Size(889, 495);
             this.Name = "FrmInicio";
             this.Text = ".:. Sistema de Gestión - Distribuidora de Artículos para Librerías Trantanelli S." +
     "R.L .:. ";
@@ -264,6 +329,8 @@
             this.tableLayoutPanelGeneral.ResumeLayout(false);
             this.tableLayoutPanelGeneral.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -286,5 +353,9 @@
         private System.Windows.Forms.ToolStripMenuItem aYUDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rESTAURACIÓNToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

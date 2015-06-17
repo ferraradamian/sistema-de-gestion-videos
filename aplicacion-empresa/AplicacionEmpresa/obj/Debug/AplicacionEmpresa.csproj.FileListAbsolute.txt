@@ -11,3 +11,10 @@ C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\AplicacionEmpresa\bin
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe.config
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.exe
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.pdb
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.exe
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\AplicacionEmpresa.pdb
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\CapaPresentacion.dll
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\CapaPresentacion.pdb
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.csprojResolveAssemblyReference.cache
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.csproj.GenerateResource.Cache
