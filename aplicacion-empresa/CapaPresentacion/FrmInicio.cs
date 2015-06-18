@@ -16,5 +16,11 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void buttonProductos_Click(object sender, EventArgs e)
+        {
+            Productos controlProductos = new Productos();
+            this.panelContainer.Controls.Add(controlProductos);
+        }
     }
 }

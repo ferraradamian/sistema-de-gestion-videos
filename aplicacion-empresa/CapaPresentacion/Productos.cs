@@ -15,6 +15,7 @@ namespace CapaPresentacion
         public Productos()
         {
             InitializeComponent();
+            this.Dock = DockStyle.Fill;
         }
     }
 }

@@ -38,14 +38,14 @@
             this.buttonProductos = new System.Windows.Forms.Button();
             this.buttonPedidos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aRCHIVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rESTAURACIÓNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.tableLayoutPanelGeneral.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -58,7 +58,7 @@
             this.tableLayoutPanelGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelGeneral.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanelGeneral.Controls.Add(this.menuStrip1, 0, 0);
-            this.tableLayoutPanelGeneral.Controls.Add(this.panel2, 0, 2);
+            this.tableLayoutPanelGeneral.Controls.Add(this.panelContainer, 0, 2);
             this.tableLayoutPanelGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelGeneral.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelGeneral.Name = "tableLayoutPanelGeneral";
@@ -197,6 +197,7 @@
             this.buttonProductos.Text = "PRODUCTOS";
             this.buttonProductos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonProductos.UseVisualStyleBackColor = false;
+            this.buttonProductos.Click += new System.EventHandler(this.buttonProductos_Click);
             // 
             // buttonPedidos
             // 
@@ -228,6 +229,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(231, 105);
             this.panel1.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Orange;
+            this.label3.Location = new System.Drawing.Point(35, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(362, 39);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "TRANTANELLI S.R.L";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Location = new System.Drawing.Point(37, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(343, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "DE ARTÍCULOS PARA LIBRERÍAS";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(32, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(344, 46);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DISTRIBUIDORA";
             // 
             // menuStrip1
             // 
@@ -268,51 +305,15 @@
             this.rESTAURACIÓNToolStripMenuItem.Size = new System.Drawing.Size(131, 23);
             this.rESTAURACIÓNToolStripMenuItem.Text = "RESTAURACIÓN";
             // 
-            // panel2
+            // panelContainer
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(7, 147);
-            this.panel2.Margin = new System.Windows.Forms.Padding(7, 3, 5, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(861, 306);
-            this.panel2.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(32, 1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DISTRIBUIDORA";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(37, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(343, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "DE ARTÍCULOS PARA LIBRERÍAS";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Orange;
-            this.label3.Location = new System.Drawing.Point(35, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(362, 39);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "TRANTANELLI S.R.L";
+            this.panelContainer.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(7, 147);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(7, 3, 5, 3);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(861, 306);
+            this.panelContainer.TabIndex = 2;
             // 
             // FrmInicio
             // 
@@ -353,7 +354,7 @@
         private System.Windows.Forms.ToolStripMenuItem aYUDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rESTAURACIÓNToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
