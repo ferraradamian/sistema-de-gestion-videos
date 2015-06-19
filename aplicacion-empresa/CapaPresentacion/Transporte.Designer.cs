@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class Productos
+    partial class Transporte
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,9 +31,6 @@
             this.tableLayoutPanelGeneral = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelManipulacion = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonAgregar = new System.Windows.Forms.Button();
-            this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonEditar = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.groupBoxBuscar = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -46,7 +43,10 @@
             this.buttonPaginacionSiguiente = new System.Windows.Forms.Button();
             this.labelPaginacion = new System.Windows.Forms.Label();
             this.labelAreaDeMensajes = new System.Windows.Forms.Label();
-            this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTransporte = new System.Windows.Forms.DataGridView();
+            this.buttonAgregar = new System.Windows.Forms.Button();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
             this.tableLayoutPanelGeneral.SuspendLayout();
             this.tableLayoutPanelTop.SuspendLayout();
             this.tableLayoutPanelManipulacion.SuspendLayout();
@@ -54,7 +54,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanelBottom.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransporte)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanelGeneral
@@ -63,7 +63,7 @@
             this.tableLayoutPanelGeneral.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelGeneral.Controls.Add(this.tableLayoutPanelTop, 0, 0);
             this.tableLayoutPanelGeneral.Controls.Add(this.tableLayoutPanelBottom, 0, 2);
-            this.tableLayoutPanelGeneral.Controls.Add(this.dataGridViewProductos, 0, 1);
+            this.tableLayoutPanelGeneral.Controls.Add(this.dataGridViewTransporte, 0, 1);
             this.tableLayoutPanelGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelGeneral.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelGeneral.Name = "tableLayoutPanelGeneral";
@@ -79,7 +79,7 @@
             this.tableLayoutPanelTop.ColumnCount = 3;
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.27457F));
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.72543F));
-            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221F));
+            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
             this.tableLayoutPanelTop.Controls.Add(this.tableLayoutPanelManipulacion, 2, 0);
             this.tableLayoutPanelTop.Controls.Add(this.labelTitulo, 0, 0);
             this.tableLayoutPanelTop.Controls.Add(this.groupBoxBuscar, 1, 0);
@@ -101,63 +101,12 @@
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEliminar, 1, 0);
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEditar, 0, 0);
             this.tableLayoutPanelManipulacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(640, 3);
+            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(637, 3);
             this.tableLayoutPanelManipulacion.Name = "tableLayoutPanelManipulacion";
             this.tableLayoutPanelManipulacion.RowCount = 1;
             this.tableLayoutPanelManipulacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(216, 90);
+            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(219, 90);
             this.tableLayoutPanelManipulacion.TabIndex = 0;
-            // 
-            // buttonAgregar
-            // 
-            this.buttonAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAgregar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAgregar.Image = global::CapaPresentacion.Properties.Resources.agregar;
-            this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAgregar.Location = new System.Drawing.Point(147, 3);
-            this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(66, 84);
-            this.buttonAgregar.TabIndex = 2;
-            this.buttonAgregar.Text = "Agregar";
-            this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonAgregar.UseVisualStyleBackColor = false;
-            // 
-            // buttonEliminar
-            // 
-            this.buttonEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEliminar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEliminar.Image = global::CapaPresentacion.Properties.Resources.eliminar;
-            this.buttonEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEliminar.Location = new System.Drawing.Point(75, 3);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(66, 84);
-            this.buttonEliminar.TabIndex = 1;
-            this.buttonEliminar.Text = "Eliminar";
-            this.buttonEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonEliminar.UseVisualStyleBackColor = false;
-            // 
-            // buttonEditar
-            // 
-            this.buttonEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEditar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEditar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditar.Image = global::CapaPresentacion.Properties.Resources.editar;
-            this.buttonEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEditar.Location = new System.Drawing.Point(3, 3);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(66, 84);
-            this.buttonEditar.TabIndex = 0;
-            this.buttonEditar.Text = "Editar";
-            this.buttonEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonEditar.UseVisualStyleBackColor = false;
             // 
             // labelTitulo
             // 
@@ -168,9 +117,9 @@
             this.labelTitulo.Location = new System.Drawing.Point(0, 11);
             this.labelTitulo.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(359, 73);
+            this.labelTitulo.Size = new System.Drawing.Size(384, 73);
             this.labelTitulo.TabIndex = 1;
-            this.labelTitulo.Text = "PRODUCTOS";
+            this.labelTitulo.Text = "TRANSPORTE";
             // 
             // groupBoxBuscar
             // 
@@ -178,13 +127,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxBuscar.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxBuscar.Font = new System.Drawing.Font("Candara", 11F, System.Drawing.FontStyle.Bold);
-            this.groupBoxBuscar.Location = new System.Drawing.Point(413, 1);
+            this.groupBoxBuscar.Location = new System.Drawing.Point(411, 1);
             this.groupBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 6);
             this.groupBoxBuscar.Name = "groupBoxBuscar";
-            this.groupBoxBuscar.Size = new System.Drawing.Size(221, 89);
+            this.groupBoxBuscar.Size = new System.Drawing.Size(220, 89);
             this.groupBoxBuscar.TabIndex = 2;
             this.groupBoxBuscar.TabStop = false;
-            this.groupBoxBuscar.Text = "Buscar Producto";
+            this.groupBoxBuscar.Text = "Buscar Transporte";
             // 
             // tableLayoutPanel1
             // 
@@ -321,27 +270,78 @@
             this.labelAreaDeMensajes.TabIndex = 1;
             this.labelAreaDeMensajes.Text = "Bienvenidos al Sistema de Gestión. Este será su Área de Mensajes";
             // 
-            // dataGridViewProductos
+            // dataGridViewTransporte
             // 
-            this.dataGridViewProductos.AllowUserToAddRows = false;
-            this.dataGridViewProductos.AllowUserToDeleteRows = false;
-            this.dataGridViewProductos.AllowUserToOrderColumns = true;
-            this.dataGridViewProductos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProductos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewProductos.Location = new System.Drawing.Point(9, 105);
-            this.dataGridViewProductos.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
-            this.dataGridViewProductos.Name = "dataGridViewProductos";
-            this.dataGridViewProductos.ReadOnly = true;
-            this.dataGridViewProductos.Size = new System.Drawing.Size(847, 253);
-            this.dataGridViewProductos.TabIndex = 2;
+            this.dataGridViewTransporte.AllowUserToAddRows = false;
+            this.dataGridViewTransporte.AllowUserToDeleteRows = false;
+            this.dataGridViewTransporte.AllowUserToOrderColumns = true;
+            this.dataGridViewTransporte.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewTransporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTransporte.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewTransporte.Location = new System.Drawing.Point(9, 105);
+            this.dataGridViewTransporte.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            this.dataGridViewTransporte.Name = "dataGridViewTransporte";
+            this.dataGridViewTransporte.ReadOnly = true;
+            this.dataGridViewTransporte.Size = new System.Drawing.Size(847, 253);
+            this.dataGridViewTransporte.TabIndex = 2;
             // 
-            // Productos
+            // buttonAgregar
+            // 
+            this.buttonAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAgregar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAgregar.Image = global::CapaPresentacion.Properties.Resources.agregar;
+            this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonAgregar.Location = new System.Drawing.Point(149, 3);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(67, 84);
+            this.buttonAgregar.TabIndex = 2;
+            this.buttonAgregar.Text = "Agregar";
+            this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonAgregar.UseVisualStyleBackColor = false;
+            // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonEliminar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEliminar.Image = global::CapaPresentacion.Properties.Resources.eliminar;
+            this.buttonEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonEliminar.Location = new System.Drawing.Point(76, 3);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(67, 84);
+            this.buttonEliminar.TabIndex = 1;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonEliminar.UseVisualStyleBackColor = false;
+            // 
+            // buttonEditar
+            // 
+            this.buttonEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonEditar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonEditar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditar.Image = global::CapaPresentacion.Properties.Resources.editar;
+            this.buttonEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonEditar.Location = new System.Drawing.Point(3, 3);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(67, 84);
+            this.buttonEditar.TabIndex = 0;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonEditar.UseVisualStyleBackColor = false;
+            // 
+            // Transporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanelGeneral);
-            this.Name = "Productos";
+            this.Name = "Transporte";
             this.Size = new System.Drawing.Size(865, 404);
             this.tableLayoutPanelGeneral.ResumeLayout(false);
             this.tableLayoutPanelTop.ResumeLayout(false);
@@ -354,7 +354,7 @@
             this.tableLayoutPanelBottom.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTransporte)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -379,6 +379,6 @@
         private System.Windows.Forms.Button buttonPaginacionSiguiente;
         private System.Windows.Forms.Label labelPaginacion;
         private System.Windows.Forms.Label labelAreaDeMensajes;
-        private System.Windows.Forms.DataGridView dataGridViewProductos;
+        private System.Windows.Forms.DataGridView dataGridViewTransporte;
     }
 }

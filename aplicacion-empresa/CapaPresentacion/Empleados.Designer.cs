@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class Productos
+    partial class Empleados
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,14 +31,11 @@
             this.tableLayoutPanelGeneral = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelManipulacion = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonAgregar = new System.Windows.Forms.Button();
-            this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonEditar = new System.Windows.Forms.Button();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.groupBoxBuscar = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxNombreBuscar = new System.Windows.Forms.TextBox();
-            this.labelBuscarNombre = new System.Windows.Forms.Label();
+            this.labelBuscarApellido = new System.Windows.Forms.Label();
             this.buttonRefrescar = new System.Windows.Forms.Button();
             this.tableLayoutPanelBottom = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -47,6 +44,9 @@
             this.labelPaginacion = new System.Windows.Forms.Label();
             this.labelAreaDeMensajes = new System.Windows.Forms.Label();
             this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
+            this.buttonAgregar = new System.Windows.Forms.Button();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
             this.tableLayoutPanelGeneral.SuspendLayout();
             this.tableLayoutPanelTop.SuspendLayout();
             this.tableLayoutPanelManipulacion.SuspendLayout();
@@ -79,7 +79,7 @@
             this.tableLayoutPanelTop.ColumnCount = 3;
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.27457F));
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.72543F));
-            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221F));
+            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 223F));
             this.tableLayoutPanelTop.Controls.Add(this.tableLayoutPanelManipulacion, 2, 0);
             this.tableLayoutPanelTop.Controls.Add(this.labelTitulo, 0, 0);
             this.tableLayoutPanelTop.Controls.Add(this.groupBoxBuscar, 1, 0);
@@ -101,63 +101,12 @@
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEliminar, 1, 0);
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEditar, 0, 0);
             this.tableLayoutPanelManipulacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(640, 3);
+            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(638, 3);
             this.tableLayoutPanelManipulacion.Name = "tableLayoutPanelManipulacion";
             this.tableLayoutPanelManipulacion.RowCount = 1;
             this.tableLayoutPanelManipulacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(216, 90);
+            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(218, 90);
             this.tableLayoutPanelManipulacion.TabIndex = 0;
-            // 
-            // buttonAgregar
-            // 
-            this.buttonAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAgregar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAgregar.Image = global::CapaPresentacion.Properties.Resources.agregar;
-            this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAgregar.Location = new System.Drawing.Point(147, 3);
-            this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(66, 84);
-            this.buttonAgregar.TabIndex = 2;
-            this.buttonAgregar.Text = "Agregar";
-            this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonAgregar.UseVisualStyleBackColor = false;
-            // 
-            // buttonEliminar
-            // 
-            this.buttonEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEliminar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEliminar.Image = global::CapaPresentacion.Properties.Resources.eliminar;
-            this.buttonEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEliminar.Location = new System.Drawing.Point(75, 3);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(66, 84);
-            this.buttonEliminar.TabIndex = 1;
-            this.buttonEliminar.Text = "Eliminar";
-            this.buttonEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonEliminar.UseVisualStyleBackColor = false;
-            // 
-            // buttonEditar
-            // 
-            this.buttonEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonEditar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEditar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditar.Image = global::CapaPresentacion.Properties.Resources.editar;
-            this.buttonEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEditar.Location = new System.Drawing.Point(3, 3);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(66, 84);
-            this.buttonEditar.TabIndex = 0;
-            this.buttonEditar.Text = "Editar";
-            this.buttonEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonEditar.UseVisualStyleBackColor = false;
             // 
             // labelTitulo
             // 
@@ -168,9 +117,9 @@
             this.labelTitulo.Location = new System.Drawing.Point(0, 11);
             this.labelTitulo.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(359, 73);
+            this.labelTitulo.Size = new System.Drawing.Size(361, 73);
             this.labelTitulo.TabIndex = 1;
-            this.labelTitulo.Text = "PRODUCTOS";
+            this.labelTitulo.Text = "EMPLEADOS";
             // 
             // groupBoxBuscar
             // 
@@ -178,13 +127,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxBuscar.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxBuscar.Font = new System.Drawing.Font("Candara", 11F, System.Drawing.FontStyle.Bold);
-            this.groupBoxBuscar.Location = new System.Drawing.Point(413, 1);
+            this.groupBoxBuscar.Location = new System.Drawing.Point(411, 1);
             this.groupBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 6);
             this.groupBoxBuscar.Name = "groupBoxBuscar";
             this.groupBoxBuscar.Size = new System.Drawing.Size(221, 89);
             this.groupBoxBuscar.TabIndex = 2;
             this.groupBoxBuscar.TabStop = false;
-            this.groupBoxBuscar.Text = "Buscar Producto";
+            this.groupBoxBuscar.Text = "Buscar Empleado";
             // 
             // tableLayoutPanel1
             // 
@@ -192,7 +141,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.5F));
             this.tableLayoutPanel1.Controls.Add(this.textBoxNombreBuscar, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.labelBuscarNombre, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelBuscarApellido, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonRefrescar, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 20);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -212,16 +161,16 @@
             this.textBoxNombreBuscar.Size = new System.Drawing.Size(124, 25);
             this.textBoxNombreBuscar.TabIndex = 0;
             // 
-            // labelBuscarNombre
+            // labelBuscarApellido
             // 
-            this.labelBuscarNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelBuscarNombre.AutoSize = true;
-            this.labelBuscarNombre.Location = new System.Drawing.Point(0, 6);
-            this.labelBuscarNombre.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.labelBuscarNombre.Name = "labelBuscarNombre";
-            this.labelBuscarNombre.Size = new System.Drawing.Size(64, 18);
-            this.labelBuscarNombre.TabIndex = 1;
-            this.labelBuscarNombre.Text = "Nombre:";
+            this.labelBuscarApellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelBuscarApellido.AutoSize = true;
+            this.labelBuscarApellido.Location = new System.Drawing.Point(0, 6);
+            this.labelBuscarApellido.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.labelBuscarApellido.Name = "labelBuscarApellido";
+            this.labelBuscarApellido.Size = new System.Drawing.Size(65, 18);
+            this.labelBuscarApellido.TabIndex = 1;
+            this.labelBuscarApellido.Text = "Apellido:";
             // 
             // buttonRefrescar
             // 
@@ -336,12 +285,63 @@
             this.dataGridViewProductos.Size = new System.Drawing.Size(847, 253);
             this.dataGridViewProductos.TabIndex = 2;
             // 
-            // Productos
+            // buttonAgregar
+            // 
+            this.buttonAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAgregar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAgregar.Image = global::CapaPresentacion.Properties.Resources.agregar;
+            this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonAgregar.Location = new System.Drawing.Point(147, 3);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(68, 84);
+            this.buttonAgregar.TabIndex = 2;
+            this.buttonAgregar.Text = "Agregar";
+            this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonAgregar.UseVisualStyleBackColor = false;
+            // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonEliminar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEliminar.Image = global::CapaPresentacion.Properties.Resources.eliminar;
+            this.buttonEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonEliminar.Location = new System.Drawing.Point(75, 3);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(66, 84);
+            this.buttonEliminar.TabIndex = 1;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonEliminar.UseVisualStyleBackColor = false;
+            // 
+            // buttonEditar
+            // 
+            this.buttonEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonEditar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonEditar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditar.Image = global::CapaPresentacion.Properties.Resources.editar;
+            this.buttonEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonEditar.Location = new System.Drawing.Point(3, 3);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(66, 84);
+            this.buttonEditar.TabIndex = 0;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonEditar.UseVisualStyleBackColor = false;
+            // 
+            // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanelGeneral);
-            this.Name = "Productos";
+            this.Name = "Empleados";
             this.Size = new System.Drawing.Size(865, 404);
             this.tableLayoutPanelGeneral.ResumeLayout(false);
             this.tableLayoutPanelTop.ResumeLayout(false);
@@ -372,7 +372,7 @@
         private System.Windows.Forms.GroupBox groupBoxBuscar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox textBoxNombreBuscar;
-        private System.Windows.Forms.Label labelBuscarNombre;
+        private System.Windows.Forms.Label labelBuscarApellido;
         private System.Windows.Forms.Button buttonRefrescar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button buttonPaginacionAtras;

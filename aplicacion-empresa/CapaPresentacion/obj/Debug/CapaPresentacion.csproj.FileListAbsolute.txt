@@ -19,3 +19,8 @@ C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-em
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Productos.resources
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Pedidos.resources
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Transporte.resources
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Categorias.resources
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Clientes.resources
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Empleados.resources

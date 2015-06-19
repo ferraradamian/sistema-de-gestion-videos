@@ -20,7 +20,43 @@ namespace CapaPresentacion
         private void buttonProductos_Click(object sender, EventArgs e)
         {
             Productos controlProductos = new Productos();
+            this.panelContainer.Controls.Clear();
             this.panelContainer.Controls.Add(controlProductos);
+        }
+
+        private void buttonPedidos_Click(object sender, EventArgs e)
+        {
+            Pedidos controlPedidos = new Pedidos();
+            this.panelContainer.Controls.Clear();
+            this.panelContainer.Controls.Add(controlPedidos);
+        }
+
+        private void buttonClientes_Click(object sender, EventArgs e)
+        {
+            Clientes controlClientes = new Clientes();
+            this.panelContainer.Controls.Clear();
+            this.panelContainer.Controls.Add(controlClientes);
+        }
+
+        private void buttonTransporte_Click(object sender, EventArgs e)
+        {
+            Transporte controlTransporte = new Transporte();
+            this.panelContainer.Controls.Clear();
+            this.panelContainer.Controls.Add(controlTransporte);
+        }
+
+        private void buttonEmpleados_Click(object sender, EventArgs e)
+        {
+            Empleados controlEmpleados = new Empleados();
+            this.panelContainer.Controls.Clear();
+            this.panelContainer.Controls.Add(controlEmpleados);
+        }
+
+        private void buttonCategorias_Click(object sender, EventArgs e)
+        {
+            Categorias controlCategorias = new Categorias();
+            this.panelContainer.Controls.Clear();
+            this.panelContainer.Controls.Add(controlCategorias);
         }
     }
 }

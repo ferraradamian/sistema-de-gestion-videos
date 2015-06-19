@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class Productos
+    partial class Categorias
     {
         /// <summary> 
         /// Required designer variable.
@@ -79,7 +79,7 @@
             this.tableLayoutPanelTop.ColumnCount = 3;
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.27457F));
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.72543F));
-            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221F));
+            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 222F));
             this.tableLayoutPanelTop.Controls.Add(this.tableLayoutPanelManipulacion, 2, 0);
             this.tableLayoutPanelTop.Controls.Add(this.labelTitulo, 0, 0);
             this.tableLayoutPanelTop.Controls.Add(this.groupBoxBuscar, 1, 0);
@@ -101,11 +101,11 @@
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEliminar, 1, 0);
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEditar, 0, 0);
             this.tableLayoutPanelManipulacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(640, 3);
+            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(639, 3);
             this.tableLayoutPanelManipulacion.Name = "tableLayoutPanelManipulacion";
             this.tableLayoutPanelManipulacion.RowCount = 1;
             this.tableLayoutPanelManipulacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(216, 90);
+            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(217, 90);
             this.tableLayoutPanelManipulacion.TabIndex = 0;
             // 
             // buttonAgregar
@@ -119,7 +119,7 @@
             this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonAgregar.Location = new System.Drawing.Point(147, 3);
             this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(66, 84);
+            this.buttonAgregar.Size = new System.Drawing.Size(67, 84);
             this.buttonAgregar.TabIndex = 2;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -168,9 +168,9 @@
             this.labelTitulo.Location = new System.Drawing.Point(0, 11);
             this.labelTitulo.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(359, 73);
+            this.labelTitulo.Size = new System.Drawing.Size(367, 73);
             this.labelTitulo.TabIndex = 1;
-            this.labelTitulo.Text = "PRODUCTOS";
+            this.labelTitulo.Text = "CATEGORÍAS";
             // 
             // groupBoxBuscar
             // 
@@ -178,13 +178,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxBuscar.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxBuscar.Font = new System.Drawing.Font("Candara", 11F, System.Drawing.FontStyle.Bold);
-            this.groupBoxBuscar.Location = new System.Drawing.Point(413, 1);
+            this.groupBoxBuscar.Location = new System.Drawing.Point(412, 1);
             this.groupBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 6);
             this.groupBoxBuscar.Name = "groupBoxBuscar";
             this.groupBoxBuscar.Size = new System.Drawing.Size(221, 89);
             this.groupBoxBuscar.TabIndex = 2;
             this.groupBoxBuscar.TabStop = false;
-            this.groupBoxBuscar.Text = "Buscar Producto";
+            this.groupBoxBuscar.Text = "Buscar Categoría";
             // 
             // tableLayoutPanel1
             // 
@@ -336,12 +336,12 @@
             this.dataGridViewProductos.Size = new System.Drawing.Size(847, 253);
             this.dataGridViewProductos.TabIndex = 2;
             // 
-            // Productos
+            // Categorías
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanelGeneral);
-            this.Name = "Productos";
+            this.Name = "Categorías";
             this.Size = new System.Drawing.Size(865, 404);
             this.tableLayoutPanelGeneral.ResumeLayout(false);
             this.tableLayoutPanelTop.ResumeLayout(false);
