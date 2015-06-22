@@ -24,3 +24,5 @@ C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-em
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Categorias.resources
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Clientes.resources
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\obj\Debug\CapaPresentacion.Empleados.resources
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaPresentacion\bin\Debug\CapaDatos.pdb

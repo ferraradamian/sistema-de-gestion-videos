@@ -18,3 +18,7 @@ C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-em
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.csprojResolveAssemblyReference.cache
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.Properties.Resources.resources
 C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\obj\Debug\AplicacionEmpresa.csproj.GenerateResource.Cache
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\CapaNegocio.dll
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\CapaDatos.dll
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\CapaNegocio.pdb
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\AplicacionEmpresa\bin\Debug\CapaDatos.pdb

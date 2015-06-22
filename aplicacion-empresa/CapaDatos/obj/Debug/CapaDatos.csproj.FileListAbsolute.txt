@@ -2,3 +2,8 @@ C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\bin\Debug\C
 C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\HernánMartín\Desktop\Proyecto\AplicacionEmpresa\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HernánMartín\Documents\GitHub\sistema-de-gestion-videos\aplicacion-empresa\CapaDatos\bin\Debug\CapaDatos.pdb
