@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanelGeneral = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelManipulacion = new System.Windows.Forms.TableLayoutPanel();
@@ -79,7 +80,7 @@
             this.tableLayoutPanelTop.ColumnCount = 3;
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.27457F));
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.72543F));
-            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 221F));
+            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
             this.tableLayoutPanelTop.Controls.Add(this.tableLayoutPanelManipulacion, 2, 0);
             this.tableLayoutPanelTop.Controls.Add(this.labelTitulo, 0, 0);
             this.tableLayoutPanelTop.Controls.Add(this.groupBoxBuscar, 1, 0);
@@ -101,11 +102,11 @@
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEliminar, 1, 0);
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEditar, 0, 0);
             this.tableLayoutPanelManipulacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(640, 3);
+            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(637, 3);
             this.tableLayoutPanelManipulacion.Name = "tableLayoutPanelManipulacion";
             this.tableLayoutPanelManipulacion.RowCount = 1;
             this.tableLayoutPanelManipulacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(216, 90);
+            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(219, 90);
             this.tableLayoutPanelManipulacion.TabIndex = 0;
             // 
             // buttonAgregar
@@ -117,9 +118,9 @@
             this.buttonAgregar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAgregar.Image = global::CapaPresentacion.Properties.Resources.agregar;
             this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonAgregar.Location = new System.Drawing.Point(147, 3);
+            this.buttonAgregar.Location = new System.Drawing.Point(149, 3);
             this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(66, 84);
+            this.buttonAgregar.Size = new System.Drawing.Size(67, 84);
             this.buttonAgregar.TabIndex = 2;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -134,9 +135,9 @@
             this.buttonEliminar.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEliminar.Image = global::CapaPresentacion.Properties.Resources.eliminar;
             this.buttonEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonEliminar.Location = new System.Drawing.Point(75, 3);
+            this.buttonEliminar.Location = new System.Drawing.Point(76, 3);
             this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(66, 84);
+            this.buttonEliminar.Size = new System.Drawing.Size(67, 84);
             this.buttonEliminar.TabIndex = 1;
             this.buttonEliminar.Text = "Eliminar";
             this.buttonEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -153,7 +154,7 @@
             this.buttonEditar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonEditar.Location = new System.Drawing.Point(3, 3);
             this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(66, 84);
+            this.buttonEditar.Size = new System.Drawing.Size(67, 84);
             this.buttonEditar.TabIndex = 0;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -178,10 +179,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxBuscar.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxBuscar.Font = new System.Drawing.Font("Candara", 11F, System.Drawing.FontStyle.Bold);
-            this.groupBoxBuscar.Location = new System.Drawing.Point(413, 1);
+            this.groupBoxBuscar.Location = new System.Drawing.Point(411, 1);
             this.groupBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 6);
             this.groupBoxBuscar.Name = "groupBoxBuscar";
-            this.groupBoxBuscar.Size = new System.Drawing.Size(221, 89);
+            this.groupBoxBuscar.Size = new System.Drawing.Size(220, 89);
             this.groupBoxBuscar.TabIndex = 2;
             this.groupBoxBuscar.TabStop = false;
             this.groupBoxBuscar.Text = "Buscar Producto";
@@ -283,6 +284,7 @@
             this.buttonPaginacionAtras.TabIndex = 0;
             this.buttonPaginacionAtras.Text = "<<";
             this.buttonPaginacionAtras.UseVisualStyleBackColor = false;
+            this.buttonPaginacionAtras.Click += new System.EventHandler(this.buttonPaginacionAtras_Click);
             // 
             // buttonPaginacionSiguiente
             // 
@@ -298,6 +300,7 @@
             this.buttonPaginacionSiguiente.TabIndex = 1;
             this.buttonPaginacionSiguiente.Text = ">>";
             this.buttonPaginacionSiguiente.UseVisualStyleBackColor = false;
+            this.buttonPaginacionSiguiente.Click += new System.EventHandler(this.buttonPaginacionSiguiente_Click);
             // 
             // labelPaginacion
             // 
@@ -326,13 +329,23 @@
             this.dataGridViewProductos.AllowUserToAddRows = false;
             this.dataGridViewProductos.AllowUserToDeleteRows = false;
             this.dataGridViewProductos.AllowUserToOrderColumns = true;
+            this.dataGridViewProductos.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewProductos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewProductos.Location = new System.Drawing.Point(9, 105);
             this.dataGridViewProductos.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            this.dataGridViewProductos.MultiSelect = false;
             this.dataGridViewProductos.Name = "dataGridViewProductos";
             this.dataGridViewProductos.ReadOnly = true;
+            this.dataGridViewProductos.RowHeadersVisible = false;
             this.dataGridViewProductos.Size = new System.Drawing.Size(847, 253);
             this.dataGridViewProductos.TabIndex = 2;
             // 
