@@ -12,14 +12,16 @@ namespace CapaPresentacion
 {
     public partial class FrmInicio : Form
     {
+        Productos controlProductos;
+
         public FrmInicio()
         {
             InitializeComponent();
+            controlProductos = new Productos();
         }
 
         private void buttonProductos_Click(object sender, EventArgs e)
         {
-            Productos controlProductos = new Productos();
             this.panelContainer.Controls.Clear();
             this.panelContainer.Controls.Add(controlProductos);
         }

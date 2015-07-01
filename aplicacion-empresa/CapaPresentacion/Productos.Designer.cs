@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanelGeneral = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelManipulacion = new System.Windows.Forms.TableLayoutPanel();
@@ -80,7 +80,7 @@
             this.tableLayoutPanelTop.ColumnCount = 3;
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.27457F));
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.72543F));
-            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
+            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
             this.tableLayoutPanelTop.Controls.Add(this.tableLayoutPanelManipulacion, 2, 0);
             this.tableLayoutPanelTop.Controls.Add(this.labelTitulo, 0, 0);
             this.tableLayoutPanelTop.Controls.Add(this.groupBoxBuscar, 1, 0);
@@ -102,11 +102,11 @@
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEliminar, 1, 0);
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEditar, 0, 0);
             this.tableLayoutPanelManipulacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(637, 3);
+            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(636, 3);
             this.tableLayoutPanelManipulacion.Name = "tableLayoutPanelManipulacion";
             this.tableLayoutPanelManipulacion.RowCount = 1;
             this.tableLayoutPanelManipulacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(219, 90);
+            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(220, 90);
             this.tableLayoutPanelManipulacion.TabIndex = 0;
             // 
             // buttonAgregar
@@ -120,11 +120,12 @@
             this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonAgregar.Location = new System.Drawing.Point(149, 3);
             this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(67, 84);
+            this.buttonAgregar.Size = new System.Drawing.Size(68, 84);
             this.buttonAgregar.TabIndex = 2;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonAgregar.UseVisualStyleBackColor = false;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
             // buttonEliminar
             // 
@@ -159,6 +160,7 @@
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonEditar.UseVisualStyleBackColor = false;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // labelTitulo
             // 
@@ -179,7 +181,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxBuscar.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxBuscar.Font = new System.Drawing.Font("Candara", 11F, System.Drawing.FontStyle.Bold);
-            this.groupBoxBuscar.Location = new System.Drawing.Point(411, 1);
+            this.groupBoxBuscar.Location = new System.Drawing.Point(410, 1);
             this.groupBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 6);
             this.groupBoxBuscar.Name = "groupBoxBuscar";
             this.groupBoxBuscar.Size = new System.Drawing.Size(220, 89);
@@ -330,11 +332,11 @@
             this.dataGridViewProductos.AllowUserToDeleteRows = false;
             this.dataGridViewProductos.AllowUserToOrderColumns = true;
             this.dataGridViewProductos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewProductos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;

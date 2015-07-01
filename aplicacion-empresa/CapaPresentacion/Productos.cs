@@ -49,6 +49,18 @@ namespace CapaPresentacion
             }
         }
 
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            FrmAgregarProducto nuevoProducto = new FrmAgregarProducto();
+            nuevoProducto.ShowDialog();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            FrmEditarProducto editarProducto = new FrmEditarProducto();
+            editarProducto.ShowDialog();
+        }
+
             
     }
 }
