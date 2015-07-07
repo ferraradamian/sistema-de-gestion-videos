@@ -19,5 +19,13 @@ namespace CapaNegocio
         {
             return new DProductos().Tamaño(parRegistrosPorPagina);
         }
+
+        public static DataTable Buscar(String parNombreBuscado)
+        {
+            DProductos producto = new DProductos();
+            producto.Nombre_Buscado = parNombreBuscado;
+
+            return producto.Buscar(producto);
+        }
     }
 }

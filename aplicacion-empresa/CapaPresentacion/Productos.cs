@@ -31,6 +31,26 @@ namespace CapaPresentacion
             this.labelPaginacion.Text = String.Format("Página {0} de {1}", numeroPagina, cantidadPaginas);
         }
 
+        public void Buscar()
+        {
+            try
+            {
+                this.dataGridViewProductos.DataSource = NProductos.Buscar(this.textBoxNombreBuscar.Text);
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Refrescar()
+        {
+            this.numeroPagina = 1;
+            this.Mostrar();
+            this.textBoxNombreBuscar.Text = String.Empty;
+        }
+
         private void buttonPaginacionAtras_Click(object sender, EventArgs e)
         {
             if (numeroPagina > 1)
@@ -59,6 +79,26 @@ namespace CapaPresentacion
         {
             FrmEditarProducto editarProducto = new FrmEditarProducto();
             editarProducto.ShowDialog();
+        }
+
+        private void textBoxNombreBuscar_TextChanged(object sender, EventArgs e)
+        {
+            if (this.textBoxNombreBuscar.Text == String.Empty)
+            {
+                this.numeroPagina = 1;
+                this.Mostrar();
+                this.tableLayoutPanelPaginacion.Show();
+            }
+            else
+            {
+                this.Buscar();
+                this.tableLayoutPanelPaginacion.Hide();
+            }
+        }
+
+        private void buttonRefrescar_Click(object sender, EventArgs e)
+        {
+            this.Refrescar();
         }
 
             

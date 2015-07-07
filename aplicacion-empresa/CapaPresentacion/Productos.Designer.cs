@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanelGeneral = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelManipulacion = new System.Windows.Forms.TableLayoutPanel();
@@ -42,7 +44,7 @@
             this.labelBuscarNombre = new System.Windows.Forms.Label();
             this.buttonRefrescar = new System.Windows.Forms.Button();
             this.tableLayoutPanelBottom = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelPaginacion = new System.Windows.Forms.TableLayoutPanel();
             this.buttonPaginacionAtras = new System.Windows.Forms.Button();
             this.buttonPaginacionSiguiente = new System.Windows.Forms.Button();
             this.labelPaginacion = new System.Windows.Forms.Label();
@@ -54,7 +56,7 @@
             this.groupBoxBuscar.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanelBottom.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanelPaginacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +74,10 @@
             this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelGeneral.Size = new System.Drawing.Size(865, 404);
             this.tableLayoutPanelGeneral.TabIndex = 0;
             // 
@@ -80,7 +86,7 @@
             this.tableLayoutPanelTop.ColumnCount = 3;
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.27457F));
             this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.72543F));
-            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
+            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 226F));
             this.tableLayoutPanelTop.Controls.Add(this.tableLayoutPanelManipulacion, 2, 0);
             this.tableLayoutPanelTop.Controls.Add(this.labelTitulo, 0, 0);
             this.tableLayoutPanelTop.Controls.Add(this.groupBoxBuscar, 1, 0);
@@ -102,11 +108,11 @@
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEliminar, 1, 0);
             this.tableLayoutPanelManipulacion.Controls.Add(this.buttonEditar, 0, 0);
             this.tableLayoutPanelManipulacion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(636, 3);
+            this.tableLayoutPanelManipulacion.Location = new System.Drawing.Point(635, 3);
             this.tableLayoutPanelManipulacion.Name = "tableLayoutPanelManipulacion";
             this.tableLayoutPanelManipulacion.RowCount = 1;
             this.tableLayoutPanelManipulacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(220, 90);
+            this.tableLayoutPanelManipulacion.Size = new System.Drawing.Size(221, 90);
             this.tableLayoutPanelManipulacion.TabIndex = 0;
             // 
             // buttonAgregar
@@ -120,7 +126,7 @@
             this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonAgregar.Location = new System.Drawing.Point(149, 3);
             this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(68, 84);
+            this.buttonAgregar.Size = new System.Drawing.Size(69, 84);
             this.buttonAgregar.TabIndex = 2;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -181,7 +187,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxBuscar.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxBuscar.Font = new System.Drawing.Font("Candara", 11F, System.Drawing.FontStyle.Bold);
-            this.groupBoxBuscar.Location = new System.Drawing.Point(410, 1);
+            this.groupBoxBuscar.Location = new System.Drawing.Point(409, 1);
             this.groupBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 1, 3, 6);
             this.groupBoxBuscar.Name = "groupBoxBuscar";
             this.groupBoxBuscar.Size = new System.Drawing.Size(220, 89);
@@ -214,6 +220,7 @@
             this.textBoxNombreBuscar.Name = "textBoxNombreBuscar";
             this.textBoxNombreBuscar.Size = new System.Drawing.Size(124, 25);
             this.textBoxNombreBuscar.TabIndex = 0;
+            this.textBoxNombreBuscar.TextChanged += new System.EventHandler(this.textBoxNombreBuscar_TextChanged);
             // 
             // labelBuscarNombre
             // 
@@ -239,13 +246,14 @@
             this.buttonRefrescar.TabIndex = 2;
             this.buttonRefrescar.Text = "Refrescar";
             this.buttonRefrescar.UseVisualStyleBackColor = false;
+            this.buttonRefrescar.Click += new System.EventHandler(this.buttonRefrescar_Click);
             // 
             // tableLayoutPanelBottom
             // 
             this.tableLayoutPanelBottom.ColumnCount = 2;
             this.tableLayoutPanelBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.52969F));
             this.tableLayoutPanelBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.47031F));
-            this.tableLayoutPanelBottom.Controls.Add(this.tableLayoutPanel2, 1, 0);
+            this.tableLayoutPanelBottom.Controls.Add(this.tableLayoutPanelPaginacion, 1, 0);
             this.tableLayoutPanelBottom.Controls.Add(this.labelAreaDeMensajes, 0, 0);
             this.tableLayoutPanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanelBottom.Location = new System.Drawing.Point(3, 364);
@@ -255,22 +263,22 @@
             this.tableLayoutPanelBottom.Size = new System.Drawing.Size(859, 37);
             this.tableLayoutPanelBottom.TabIndex = 1;
             // 
-            // tableLayoutPanel2
+            // tableLayoutPanelPaginacion
             // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tableLayoutPanel2.Controls.Add(this.buttonPaginacionAtras, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.buttonPaginacionSiguiente, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelPaginacion, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(480, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(376, 31);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.tableLayoutPanelPaginacion.ColumnCount = 3;
+            this.tableLayoutPanelPaginacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelPaginacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tableLayoutPanelPaginacion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tableLayoutPanelPaginacion.Controls.Add(this.buttonPaginacionAtras, 1, 0);
+            this.tableLayoutPanelPaginacion.Controls.Add(this.buttonPaginacionSiguiente, 2, 0);
+            this.tableLayoutPanelPaginacion.Controls.Add(this.labelPaginacion, 0, 0);
+            this.tableLayoutPanelPaginacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelPaginacion.Location = new System.Drawing.Point(480, 3);
+            this.tableLayoutPanelPaginacion.Name = "tableLayoutPanelPaginacion";
+            this.tableLayoutPanelPaginacion.RowCount = 1;
+            this.tableLayoutPanelPaginacion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelPaginacion.Size = new System.Drawing.Size(376, 31);
+            this.tableLayoutPanelPaginacion.TabIndex = 0;
             // 
             // buttonPaginacionAtras
             // 
@@ -332,15 +340,31 @@
             this.dataGridViewProductos.AllowUserToDeleteRows = false;
             this.dataGridViewProductos.AllowUserToOrderColumns = true;
             this.dataGridViewProductos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
-            this.dataGridViewProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
+            this.dataGridViewProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewProductos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewProductos.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewProductos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewProductos.Location = new System.Drawing.Point(9, 105);
             this.dataGridViewProductos.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
@@ -348,6 +372,7 @@
             this.dataGridViewProductos.Name = "dataGridViewProductos";
             this.dataGridViewProductos.ReadOnly = true;
             this.dataGridViewProductos.RowHeadersVisible = false;
+            this.dataGridViewProductos.RowTemplate.Height = 30;
             this.dataGridViewProductos.Size = new System.Drawing.Size(847, 253);
             this.dataGridViewProductos.TabIndex = 2;
             // 
@@ -367,8 +392,8 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanelBottom.ResumeLayout(false);
             this.tableLayoutPanelBottom.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanelPaginacion.ResumeLayout(false);
+            this.tableLayoutPanelPaginacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
             this.ResumeLayout(false);
 
@@ -389,7 +414,7 @@
         private System.Windows.Forms.TextBox textBoxNombreBuscar;
         private System.Windows.Forms.Label labelBuscarNombre;
         private System.Windows.Forms.Button buttonRefrescar;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPaginacion;
         private System.Windows.Forms.Button buttonPaginacionAtras;
         private System.Windows.Forms.Button buttonPaginacionSiguiente;
         private System.Windows.Forms.Label labelPaginacion;

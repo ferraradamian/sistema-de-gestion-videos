@@ -15,6 +15,7 @@ namespace CapaDatos
         public String Nombre_Categoria { get; set; }
         public decimal Precio_Unitario { get; set; }
         public String Detalles { get; set; }
+        public String Nombre_Buscado { get; set; }
 
         public DProductos()
         {
@@ -121,6 +122,48 @@ namespace CapaDatos
             }
 
             return totalPaginas;
+        }
+
+        public DataTable Buscar(DProductos parProducto)
+        {
+            DataTable TablaDatos = new DataTable("Produccion.v_Productos_NombreCategoria");
+            SqlConnection SqlConexion = new SqlConnection();
+
+            try
+            {
+                SqlConexion.ConnectionString = DConexion.CnBDEmpresa;
+                SqlConexion.Open();
+
+                SqlCommand SqlComando = new SqlCommand();
+                SqlComando.Connection = SqlConexion;
+                SqlComando.CommandText = "Produccion.ProductosBuscar";
+                SqlComando.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParNombreBuscado = new SqlParameter();
+                ParNombreBuscado.ParameterName = "@NombreBuscado";
+                ParNombreBuscado.SqlDbType = SqlDbType.VarChar;
+                ParNombreBuscado.Size = parProducto.Nombre_Buscado.Length;
+                ParNombreBuscado.Value = parProducto.Nombre_Buscado;
+                SqlComando.Parameters.Add(ParNombreBuscado);
+
+                SqlComando.ExecuteNonQuery();
+
+                SqlDataAdapter SqlAdaptadorDatos = new SqlDataAdapter(SqlComando);
+                SqlAdaptadorDatos.Fill(TablaDatos);
+            }
+
+            catch (Exception ex)
+            {
+                TablaDatos = null;
+                throw new Exception("Error al intentar ejecutar el procedimiento almacenado Produccion.ProductosBuscar. " + ex.Message);
+            }
+
+            finally
+            {
+                SqlConexion.Close();
+            }
+
+            return TablaDatos;
         }
     }
 }
